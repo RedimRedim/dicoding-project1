@@ -3,8 +3,12 @@ function apiBtnListener(element) {
 
   apiBtn.forEach((btn) => {
     btn.addEventListener("click", () => {
-      console.log("asd");
+      console.log("Fetching Data");
       disabledButton(btn);
+      callPokemonData().then((pokemonData) => {
+        console.log("Data fetched successfully:", pokemonData);
+        // Add your code here to display the fetched data in the UI
+      });
     });
   });
 }
