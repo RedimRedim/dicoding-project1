@@ -1,37 +1,48 @@
 * {
-  /* background-color: rgb(29,29,29); */
-  font-family: "Quicksand", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+  font-family: "Quicksand", "Gill Sans", "Gill Sans MT", "Trebuchet MS",
     sans-serif;
   margin: 0; /* remove margin 1st */
   padding: 0;
+  box-sizing: border-box;
+
 }
 
-.main-container {
+
+.root {
   display: flex;
+  flex-direction: column;
   height: 100vh; /* based in  viewport height */
+
 }
 
-.main-container header {
-  background-color: beige;
-  padding: 0.2em;
-}
-
-.main-container nav {
+header {
+  background-color: #0c69c8;
   padding: 0.5em;
+  
 }
 
-.main-container nav ul {
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+header nav ul {
   list-style: none;
   padding: 0;
+
+  display: flex;
 }
 
-.main-container nav ul li {
-  margin-bottom: 10px;
+header nav ul li {
   padding: 0.5rem;
-}
+  align-items: center;
+  justify-self: center;
 
-.main-container nav ul li a {
-  color: black;
+}
+header nav ul li a {
+  color: white;
   text-decoration: none;
   background-color: transparent;
   border-radius: 999px;
@@ -43,12 +54,112 @@
   -o-transition: all 0.3s ease-in-out;
 }
 
-.main-container nav ul li a:hover {
+header nav ul li a:hover {
   background-color: rgb(47, 47, 51);
-  text-decoration: underline;
+  padding: 0.5em;
 }
 
-.main-container .content {
-  flex: 1;
-  padding: 20px;
+main{
+  width:100%;
+  height: 100%;
+
+  background-color:gray;
+}
+
+/* body container site */
+.body-container{
+  display: flex;
+  flex-direction: column;
+  flex:1;
+
+  margin: 1.5em;
+
+
+}
+
+.body-container .logo-content
+{
+  width:90%;
+  padding: 2em;
+  gap: 3em;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  margin-bottom: 2em;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self:center;
+}
+
+.body-container .logo-content .icon {
+  border-radius: 50%;
+  width: 120px; /* Increase circle size */
+  height: 120px; /* Set height to match width */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.body-container .logo-content .icon:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.body-container .logo-content .icon.dragon {
+  background-color: #0c69c8;
+  box-shadow: 0 0 20px #0c69c8;
+}
+
+.body-container .logo-content .icon.fairy {
+  background-color: #ee90e6;
+  box-shadow: 0 0 20px #ee90e6;
+}
+
+.body-container .logo-content .icon.fire {
+  background-color: #fba54c;
+  box-shadow: 0 0 20px #fba54c;
+}
+
+.body-container .logo-content .icon.steel {
+  background-color: #5695a3;
+  box-shadow: 0 0 20px #5695a3;
+}
+
+.body-container .logo-content .icon.water {
+  background-color: #47d9ff;
+  box-shadow: 0 0 20px #47d9ff;
+}
+
+.body-container .logo-content .icon img {
+  width: 75%;
+}
+
+.body-container .main-content {
+  width:90%;
+  align-self:center;
+  padding: 1em;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  margin-bottom: 2em;
+
+}
+
+.body-container .table-content {
+  width:90%;
+  align-self:center;
+  padding: 1em;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  margin-bottom: 2em;
+
+}
+
+
+/* responsive design for mobile devices */
+@media screen and (max-width: 768px) {
 }

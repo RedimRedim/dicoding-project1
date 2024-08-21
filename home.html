@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +12,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+
 </head>
 
-
 <body>
-    <div class="main-container" style="background-color:steelblue">
+    <div class="root">
+
         <header>
             <nav>
                 <ul>
@@ -26,17 +29,105 @@
                     <li><a href="">Test5</a></li>
                 </ul>
             </nav>
-    
-        </header>
-        
-    
-        <div class="content" style="background-color:steelblue">
-            <button type="submit" class="apiBtn">Generate API Detail</button>
-        </div>
-    </div>
-    
 
+        </header>
+
+        <main>Main
+            <div class="body-container" style="background-color:darkgray">
+                body container
+
+                <div class="logo-content">
+                    <div class="icon dragon">
+                        <img src="assets/images/dragon.svg">
+                    </div>
+
+                    <div class="icon fairy">
+                        <img src="assets/images/fairy.svg">
+                    </div>
+
+                    <div class="icon fire">
+                        <img src="assets/images/fire.svg">
+                    </div>
+
+                    <div class="icon steel">
+                        <img src="assets/images/steel.svg">
+                    </div>
+
+                    <div class="icon water">
+                        <img src="assets/images/water.svg">
+                    </div>
+
+                </div>
+
+
+                <div class="main-content">
+                    <div id="pContent">
+                        <h3>Water</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam vero alias distinctio
+                            corporis
+                            fugiat
+                            numquam iste itaque est facilis, corrupti sequi commodi atque ullam nostrum sunt illo
+                            deserunt
+                            quaerat
+                            libero fugit. Velit, inventore molestiae illum numquam veritatis accusamus illo, ratione
+                            natus
+                            autem
+                            ex
+                            sapiente fugiat ullam dicta facere harum nostrum, reprehenderit delectus tenetur excepturi
+                            ut
+                            dolor?
+                            Consequatur a, corrupti consequuntur non id error, at totam incidunt, cupiditate autem
+                            repudiandae?
+                            Sunt
+                            quisquam molestiae velit veritatis. Labore quas facere exercitationem dolores voluptatum
+                            enim
+                            quod
+                            fugit
+                            deserunt iste quo corrupti hic maiores molestiae perspiciatis quasi libero, vitae accusamus!
+                            Assumenda
+                            repellendus vitae iusto odio.</p>
+                    </div>
+
+
+
+                </div>
+
+                <div class="table-content">
+                    <label for="input">Input Pokemon ID/Name:</label>
+                    <input type="text" id="input" name="input">
+
+
+                    <button type="button" class="btn btn-dark apiBtn">Generate API Detail</button>
+
+                    <table id="pokemonTable">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Type</th>
+                                <th>Name</th>
+                                <th>Base_experience</th>
+                                <th>Height</th>
+                                <th>Weight</th>
+                            </tr>
+                            </tr>
+                        </thead>
+                        <tbody id="pokemonTableBody">
+                            <!-- tabledata.js -->
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        Copyright &#169; 2002&#x2013;2016 <a href=""></a>
+    </footer>
 </body>
 
+
+
 <script src="./scripts/test.js"></script>
+<script src="./scripts/tabledata.js" type="module"></script>
 </html>
