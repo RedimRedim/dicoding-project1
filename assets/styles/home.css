@@ -4,21 +4,17 @@
   margin: 0; /* remove margin 1st */
   padding: 0;
   box-sizing: border-box;
-
 }
-
 
 .root {
   display: flex;
   flex-direction: column;
   height: 100vh; /* based in  viewport height */
-
 }
 
 header {
   background-color: #0c69c8;
   padding: 0.5em;
-  
 }
 
 header nav {
@@ -39,7 +35,6 @@ header nav ul li {
   padding: 0.5rem;
   align-items: center;
   justify-self: center;
-
 }
 header nav ul li a {
   color: white;
@@ -59,27 +54,24 @@ header nav ul li a:hover {
   padding: 0.5em;
 }
 
-main{
-  width:100%;
+main {
+  width: 100%;
   height: 100%;
 
-  background-color:gray;
+  background-color: gray;
 }
 
 /* body container site */
-.body-container{
+.body-container {
   display: flex;
   flex-direction: column;
-  flex:1;
+  flex: 1;
 
   margin: 1.5em;
-
-
 }
 
-.body-container .logo-content
-{
-  width:90%;
+.body-container .logo-content {
+  width: 90%;
   padding: 2em;
   gap: 3em;
   border: 2px solid rgba(255, 255, 255, 0.3);
@@ -90,7 +82,7 @@ main{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  align-self:center;
+  align-self: center;
 }
 
 .body-container .logo-content .icon {
@@ -101,10 +93,9 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
-.body-container .logo-content .icon:hover{
+.body-container .logo-content .icon:hover {
   transform: scale(1.1);
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
@@ -140,25 +131,71 @@ main{
 }
 
 .body-container .main-content {
-  width:90%;
-  align-self:center;
+  width: 90%;
+  align-self: center;
   padding: 1em;
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   margin-bottom: 2em;
-
 }
 
 .body-container .table-content {
-  width:90%;
-  align-self:center;
+  width: 90%;
+  align-self: center;
   padding: 1em;
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   margin-bottom: 2em;
+}
+
+.table-search{
+  padding:0.2em;
+}
+
+.apiBtn {
+  border: none;
+  background-color: lightskyblue;
+  padding: 1em;
+  border-radius: 2em;
+}
+
+.apiBtn:hover {
+  cursor: pointer;
 
 }
 
+
+#pokemonTable {
+  color: white;
+  text-align: center;
+  border: 1px solid white;
+}
+
+#pokemonTable th,
+#pokemonTable td {
+  padding: 8px;
+}
+
+#pokemonTable tr:nth-child(even) {
+  background-color: #515050;
+}
+
+#pokemonTable tr:nth-child(odd) {
+  background-color: #555858;
+}
+
+#pokemonTable tr:hover {
+  background-color: #4a6381;
+}
+
+footer {
+  width: 90%;
+  align-self: center;
+  padding: 1em;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  margin-bottom: 2em;
+}
 
 /* responsive design for mobile devices */
 @media screen and (max-width: 768px) {
