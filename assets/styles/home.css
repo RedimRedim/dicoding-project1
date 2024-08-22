@@ -138,6 +138,18 @@ main #pContent {
   align-self: center;
   padding: 1em;
   flex: 40%;
+
+  display: flex;
+}
+
+main #pContent img{
+    width: 25%;
+    margin: 0.5em ;
+}
+
+main #pContent p{
+    text-align: justify ;
+    padding: 2em;
 }
 
 main .main-content {
@@ -176,6 +188,11 @@ main .table-content .table-search {
   align-self: center;
 }
 
+main .table-content .table-search img{
+    width: 50px;
+    margin:0 0.5em;
+}
+
 main .table-content .table-search label {
   text-align: center;
   align-self: center;
@@ -188,11 +205,23 @@ main .main-content #pokemonTable {
 .apiBtn {
   height: 70%;
   border: none;
-  background-color: rgb(13, 110, 253);
   color: white;
   padding: 1em;
   border-radius: 1em;
 }
+
+.apiBtn.active{
+  background-color: rgb(13, 110, 253);
+}
+
+.apiBtn.disabled{
+    background-color: rgb(33, 37, 41);
+}
+
+.apiBtn.disabled:hover {
+  cursor: not-allowed;
+}
+
 
 .apiBtn:hover {
   cursor: pointer;
@@ -272,6 +301,21 @@ footer a {
     height: 100%;
     padding: 0;
   }
+
+  main #pContent {
+    line-height: 2em;
+    align-self: center;
+    padding: 1em;
+    flex: 40%;
+  
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  main #pContent img{
+    width: 35%;
+    align-self: flex-end;
+}
 
   main .main-content {
     flex-direction: column;

@@ -17,10 +17,12 @@ function apiBtnListener(element) {
 
 function disabledButton(btn) {
   btn.disabled = true;
-  btn.textContent = "Please wait..."; // Change the button text
+  btn.textContent = "Loading..."; // Change the button text
+  btn.classList.add("disabled");
   setTimeout(() => {
     btn.disabled = false;
     btn.textContent = "Submit";
+    btn.classList.remove("disabled");
   }, 5000);
 }
 
@@ -57,7 +59,7 @@ function pushPokemonData(apiData) {
     console.log("Finished adding to pokemon Data");
     alert(`${JSON.stringify(apiData)} has been successfully added  `);
   } else {
-    console.log("Not in 5 listed pokemon Types");
+    alert("Not in 5 listed pokemon Types");
   }
 }
 
