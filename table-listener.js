@@ -1,6 +1,6 @@
-import { pokemonData } from "./data.js";
-import { typeContents } from "./data.js";
-import { Pokemon } from "./function.js";
+import { pokemonData } from "./scripts/data.js";
+import { typeContents } from "./scripts/data.js";
+import { Pokemon } from "./scripts/function.js";
 
 const pokemon = new Pokemon(pokemonData, typeContents);
 

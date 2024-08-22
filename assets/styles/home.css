@@ -50,6 +50,10 @@ header nav ul li a {
   background-color: transparent;
   border-radius: 999px;
   transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
 
 header nav ul li a:hover {
@@ -90,8 +94,8 @@ main .logo-content .icon {
   align-items: center;
 }
 
-main .logo-content  .active{
-   border-bottom:  11px solid rgb(152, 148, 148);
+main .logo-content .active {
+  border-bottom: 11px solid rgb(152, 148, 148);
 }
 
 main .logo-content .icon:hover {
@@ -136,8 +140,6 @@ main #pContent {
   flex: 40%;
 }
 
-
-
 main .main-content {
   width: 90%;
   align-self: center;
@@ -157,7 +159,7 @@ main .main-content {
   max-width: 100%; /* Optional: Set max width */
 }
 
-main .table-content  {
+main .table-content {
   color: black;
   width: 90%;
   align-self: center;
@@ -168,28 +170,28 @@ main .table-content  {
   flex-direction: row;
 }
 
-main .table-content .table-search{
+main .table-content .table-search {
   display: flex;
-  width:100%;
-
+  width: 100%;
+  align-self: center;
 }
 
-main .table-content .table-search label{
+main .table-content .table-search label {
   text-align: center;
   align-self: center;
 }
 
-main .main-content #pokemonTable  {
+main .main-content #pokemonTable {
   overflow: auto;
 }
 
 .apiBtn {
+  height: 70%;
   border: none;
   background-color: rgb(13, 110, 253);
   color: white;
   padding: 1em;
   border-radius: 1em;
-  width: 50%;
 }
 
 .apiBtn:hover {
@@ -200,7 +202,7 @@ main .main-content #pokemonTable  {
   padding: 1em;
   border-radius: 1em;
   border: none;
-  width: 50%;
+  height: 70%;
   margin: 0em 1em;
   box-shadow: 0 0 3px rgb(33, 37, 41);
 }
@@ -247,13 +249,11 @@ footer {
   gap: 10px;
   align-items: center;
   justify-content: center;
-
 }
 
-footer span em{
+footer span em {
   color: white;
 }
-
 
 footer a {
   color: white;
@@ -262,6 +262,17 @@ footer a {
 }
 
 @media screen and (max-width: 1000px) {
+
+
+    header nav{
+        padding:0;
+    }
+  main {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+
   main .main-content {
     flex-direction: column;
   }
@@ -272,19 +283,33 @@ footer a {
     padding: 0.2em;
   }
 
-  main .main-content #pokemonTable  {
+  main .table-content .table-search {
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .apiBtn{
+    padding: 1em;
+    text-wrap: nowrap;
+  }
+
+  main .main-content .table-content {
+    margin: 0;
+    padding: 0;
+  }
+
+  main .main-content #pokemonTable {
     overflow: auto;
   }
 
   main .logo-content .icon {
     border-radius: 50%;
-    height: 80px;
+    height: 70px;
     width: 80px;
-}
+  }
 
-main .logo-content .icon img {
-  width: 50%;
-}
-
- 
+  main .logo-content .icon img {
+    width: 60%;
+  }
 }
