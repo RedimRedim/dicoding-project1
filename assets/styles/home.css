@@ -1,20 +1,28 @@
 * {
   font-family: "Quicksand", "Gill Sans", "Gill Sans MT", "Trebuchet MS",
     sans-serif;
+  font-size: 16px;
+  color: black;
   margin: 0; /* remove margin 1st */
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  height: 100vh; /* based in  viewport height */
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(205, 205, 205);
+}
+
 .root {
   display: flex;
   flex-direction: column;
-  height: 100vh; /* based in  viewport height */
 }
 
 header {
-  background-color: #0c69c8;
-  padding: 0.5em;
+  border-bottom: 1px solid black;
+  background-color: rgb(33, 37, 41);
 }
 
 header nav {
@@ -22,17 +30,17 @@ header nav {
   flex-direction: column;
   align-items: left;
   justify-content: center;
+  padding: 0em 2em;
 }
 
 header nav ul {
   list-style: none;
   padding: 0;
-
   display: flex;
 }
 
 header nav ul li {
-  padding: 0.5rem;
+  padding: 1rem;
   align-items: center;
   justify-self: center;
 }
@@ -42,40 +50,27 @@ header nav ul li a {
   background-color: transparent;
   border-radius: 999px;
   transition: all 0.3s ease-in-out;
-
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
 }
 
 header nav ul li a:hover {
-  background-color: rgb(47, 47, 51);
+  background-color: rgb(13, 110, 253);
   padding: 0.5em;
 }
 
-main {
-  width: 100%;
-  height: 100%;
-
-  background-color: gray;
-}
-
 /* body container site */
-.body-container {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-
-  margin: 1.5em;
+main {
+  background-color: rgb(205, 205, 205);
+  padding: 0.5em 2em;
 }
 
-.body-container .logo-content {
+main .logo-content {
   width: 90%;
   padding: 2em;
   gap: 3em;
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 2em;
   margin-bottom: 2em;
 
   display: flex;
@@ -85,7 +80,7 @@ main {
   align-self: center;
 }
 
-.body-container .logo-content .icon {
+main .logo-content .icon {
   border-radius: 50%;
   width: 120px; /* Increase circle size */
   height: 120px; /* Set height to match width */
@@ -95,108 +90,201 @@ main {
   align-items: center;
 }
 
-.body-container .logo-content .icon:hover {
+main .logo-content  .active{
+   border-bottom:  11px solid rgb(152, 148, 148);
+}
+
+main .logo-content .icon:hover {
   transform: scale(1.1);
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
 
-.body-container .logo-content .icon.dragon {
+main .logo-content .icon.dragon {
   background-color: #0c69c8;
-  box-shadow: 0 0 20px #0c69c8;
+  box-shadow: 0 0 15px #0c69c8;
 }
 
-.body-container .logo-content .icon.fairy {
+main .logo-content .icon.fairy {
   background-color: #ee90e6;
-  box-shadow: 0 0 20px #ee90e6;
+  box-shadow: 0 0 15px #ee90e6;
 }
 
-.body-container .logo-content .icon.fire {
+main .logo-content .icon.fire {
   background-color: #fba54c;
-  box-shadow: 0 0 20px #fba54c;
+  box-shadow: 0 0 15px #fba54c;
 }
 
-.body-container .logo-content .icon.steel {
+main .logo-content .icon.steel {
   background-color: #5695a3;
-  box-shadow: 0 0 20px #5695a3;
+  box-shadow: 0 0 15px #5695a3;
 }
 
-.body-container .logo-content .icon.water {
+main .logo-content .icon.water {
   background-color: #47d9ff;
-  box-shadow: 0 0 20px #47d9ff;
+  box-shadow: 0 0 15px #47d9ff;
 }
 
-.body-container .logo-content .icon img {
+main .logo-content .icon img {
   width: 75%;
 }
 
-.body-container .main-content {
+main #pContent {
+  line-height: 2em;
+  align-self: center;
+  padding: 1em;
+  flex: 40%;
+}
+
+
+
+main .main-content {
   width: 90%;
   align-self: center;
   padding: 1em;
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 20px;
+  margin: 0 auto;
   margin-bottom: 2em;
+
+  display: flex;
+  flex-direction: column;
+  color: black;
 }
 
-.body-container .table-content {
+.table-wrapper {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  max-width: 100%; /* Optional: Set max width */
+}
+
+main .table-content  {
+  color: black;
   width: 90%;
   align-self: center;
   padding: 1em;
-  border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 20px;
-  margin-bottom: 2em;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
 }
 
-.table-search{
-  padding:0.2em;
+main .table-content .table-search{
+  display: flex;
+  width:100%;
+
+}
+
+main .table-content .table-search label{
+  text-align: center;
+  align-self: center;
+}
+
+main .main-content #pokemonTable  {
+  overflow: auto;
 }
 
 .apiBtn {
   border: none;
-  background-color: lightskyblue;
+  background-color: rgb(13, 110, 253);
+  color: white;
   padding: 1em;
-  border-radius: 2em;
+  border-radius: 1em;
+  width: 50%;
 }
 
 .apiBtn:hover {
   cursor: pointer;
-
 }
 
+#inputPokemon {
+  padding: 1em;
+  border-radius: 1em;
+  border: none;
+  width: 50%;
+  margin: 0em 1em;
+  box-shadow: 0 0 3px rgb(33, 37, 41);
+}
+
+#inputPokemon:focus {
+  background-color: rgb(33, 37, 41);
+  border: none;
+  outline: none;
+  color: white;
+}
 
 #pokemonTable {
   color: white;
   text-align: center;
-  border: 1px solid white;
+  width: 100%; /* Ensure table takes full width of its container */
 }
 
-#pokemonTable th,
+#pokemonTable th {
+  color: black; /* White text for contrast */
+  padding: 10px;
+}
+
 #pokemonTable td {
   padding: 8px;
 }
 
 #pokemonTable tr:nth-child(even) {
-  background-color: #515050;
+  background-color: rgb(226, 227, 229); /* Slightly lighter gray for odd rows */
 }
 
-#pokemonTable tr:nth-child(odd) {
-  background-color: #555858;
-}
+/* #pokemonTable tr:nth-child(odd) {
+} */
 
 #pokemonTable tr:hover {
-  background-color: #4a6381;
+  background-color: #666666; /* Lighter gray on hover */
 }
 
 footer {
-  width: 90%;
-  align-self: center;
-  padding: 1em;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  border-radius: 20px;
-  margin-bottom: 2em;
+  width: 100%;
+  background-color: rgb(33, 37, 41);
+  padding: 0.8em;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+
 }
 
-/* responsive design for mobile devices */
-@media screen and (max-width: 768px) {
+footer span em{
+  color: white;
+}
+
+
+footer a {
+  color: white;
+  padding: 0.3em;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  main .main-content {
+    flex-direction: column;
+  }
+
+  main .logo-content,
+  main .main-content {
+    width: 100%;
+    padding: 0.2em;
+  }
+
+  main .main-content #pokemonTable  {
+    overflow: auto;
+  }
+
+  main .logo-content .icon {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+
+main .logo-content .icon img {
+  width: 50%;
+}
+
+ 
 }

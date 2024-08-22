@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pokemon</title>
 
     <!-- My Own Styles -->
     <link rel="stylesheet" href="assets/styles/home.css" />
@@ -12,9 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-
-
 </head>
+
 
 <body>
     <div class="root">
@@ -22,86 +21,51 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">Test4</a></li>
-                    <li><a href="">Test5</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Test4</a></li>
+                    <li><a href="#">Test5</a></li>
                 </ul>
             </nav>
-
         </header>
-
-        <main>Main
-            <div class="body-container" style="background-color:darkgray">
-                body container
-
-                <div class="logo-content">
-                    <div class="icon dragon">
-                        <img src="assets/images/dragon.svg">
-                    </div>
-
-                    <div class="icon fairy">
-                        <img src="assets/images/fairy.svg">
-                    </div>
-
-                    <div class="icon fire">
-                        <img src="assets/images/fire.svg">
-                    </div>
-
-                    <div class="icon steel">
-                        <img src="assets/images/steel.svg">
-                    </div>
-
-                    <div class="icon water">
-                        <img src="assets/images/water.svg">
-                    </div>
-
+        <main>
+            <div class="logo-content">
+                <div class="icon dragon" id="dragon">
+                    <img src="assets/images/dragon.svg">
                 </div>
 
-
-                <div class="main-content">
-                    <div id="pContent">
-                        <h3>Water</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam vero alias distinctio
-                            corporis
-                            fugiat
-                            numquam iste itaque est facilis, corrupti sequi commodi atque ullam nostrum sunt illo
-                            deserunt
-                            quaerat
-                            libero fugit. Velit, inventore molestiae illum numquam veritatis accusamus illo, ratione
-                            natus
-                            autem
-                            ex
-                            sapiente fugiat ullam dicta facere harum nostrum, reprehenderit delectus tenetur excepturi
-                            ut
-                            dolor?
-                            Consequatur a, corrupti consequuntur non id error, at totam incidunt, cupiditate autem
-                            repudiandae?
-                            Sunt
-                            quisquam molestiae velit veritatis. Labore quas facere exercitationem dolores voluptatum
-                            enim
-                            quod
-                            fugit
-                            deserunt iste quo corrupti hic maiores molestiae perspiciatis quasi libero, vitae accusamus!
-                            Assumenda
-                            repellendus vitae iusto odio.</p>
-                    </div>
-
-
-
+                <div class="icon fairy" id="fairy">
+                    <img src="assets/images/fairy.svg">
                 </div>
+
+                <div class="icon fire" id="fire">
+                    <img src="assets/images/fire.svg">
+                </div>
+
+                <div class="icon steel" id="steel">
+                    <img src="assets/images/steel.svg">
+                </div>
+
+                <div class="icon water" id="water">
+                    <img src="assets/images/water.svg">
+                </div>
+
+            </div>
+
+            <div class="main-content">
 
                 <div class="table-content">
                     <div class="table-search">
                         <label for="input">Input Pokemon ID/Name:</label>
-                        <input type="text" id="input" name="input">
+                        <input type="text" id="inputPokemon" name="inputPokemon">
 
 
                         <button type="button" class="btn btn-dark apiBtn">Generate API Detail</button>
                     </div>
+                </div>
 
-
+                <div class="table-wrapper">
                     <table id="pokemonTable">
                         <thead>
                             <tr>
@@ -121,31 +85,24 @@
                     </table>
                 </div>
 
-                <footer>
-                    <span><cite>all rights reserved</cite></span>
-                    <br>
-                    <a href="https://duiker101.github.io/pokemon-type-svg-icons/index.html">Pokemon Types SVG Icon</a>
-                    <a href="https://pokeapi.co/">Pokemon API</a>
-                </footer>
+                <div id="pContent">
+                    <p></p>
+                    <!-- logo.js -->
+                </div>
 
             </div>
-
-
         </main>
 
-
-
-
-    </div>
-
-
-
-
+        <footer>
+            <span><em>Source:</em></span>
+            <a href="https://duiker101.github.io/pokemon-type-svg-icons/index.html" target="_blank">Pokemon Types SVG
+                Icon</a>
+            <a href="https://pokeapi.co/" target="_blank">Pokemon API</a>
+        </footer>
 </body>
-
-
 
 <script src="./scripts/test.js"></script>
 <script src="./scripts/tabledata.js" type="module"></script>
+<script src="./scripts/logo.js" type="module"></script>
 
 </html>
