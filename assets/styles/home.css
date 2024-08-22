@@ -291,7 +291,9 @@ footer a {
 }
 
 @media screen and (max-width: 1000px) {
-
+    *{
+        font-size:12px;
+    }
 
     header nav{
         padding:0;
@@ -349,11 +351,16 @@ footer a {
 
   main .logo-content .icon {
     border-radius: 50%;
-    height: 70px;
-    width: 80px;
+    height: 50px;
+    width: 50px;
   }
 
   main .logo-content .icon img {
     width: 60%;
   }
+
+  main .table-content .table-search img{
+    width:30px;
+  }
+  
 }
