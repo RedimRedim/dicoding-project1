@@ -404,3 +404,31 @@ export const pokemonData = [
     weight: 100,
   },
 ];
+
+export const typeContents = [
+  {
+    icon: "dragon",
+    content:
+      "Dragon-type Pokémon are revered for their immense power and majestic presence. Often embodying mythical and ancient creatures, they possess high base stats, especially in attack and defense. Their moves are powerful and varied, often involving draconic energy, fire, or ancient forces. Dragons are typically resistant to many other types, making them formidable opponents in battle. However, they are weak against Ice, Dragon, and Fairy types, which can exploit their weaknesses. Despite these vulnerabilities, Dragon Pokémon are among the most respected and feared creatures in the Pokémon world, known for their strength and endurance.",
+  },
+  {
+    icon: "fairy",
+    content:
+      "Fairy-type Pokémon are enchanting and mystical, often embodying the essence of magic and wonder. They are known for their grace and charm, with many of their moves involving whimsical effects like healing, status inflictions, or even playful tricks that can turn the tide of battle. Fairy types are strong against Dragon, Dark, and Fighting types, making them invaluable in combat. They often have high special defense and special attack stats, making them both resilient and powerful. Their ethereal nature is reflected in their ability to resist most other types, particularly Dragon, making them a versatile and potent type.",
+  },
+  {
+    icon: "fire",
+    content:
+      "Fire-type Pokémon are embodiments of passion and intensity, known for their fiery attacks that can engulf opponents in flames. These Pokémon often have high offensive stats, making them aggressive fighters who can deal significant damage quickly. Fire types are effective against Grass, Bug, Ice, and Steel types, often turning battles in their favor with their explosive moves. However, they are vulnerable to Water, Rock, and Ground types, which can extinguish their flames. Despite these weaknesses, Fire Pokémon are celebrated for their fierce and relentless nature, often associated with strong-willed trainers who share their burning determination.",
+  },
+  {
+    icon: "steel",
+    content:
+      "Steel-type Pokémon are known for their incredible durability and resilience, often resembling metal or mechanical creatures. They boast some of the highest defense stats in the Pokémon world, making them formidable in battle. Their moves are typically physical and involve heavy, metallic attacks that can crush or pierce through opponents. Steel types are resistant to many other types, including Normal, Flying, Rock, and Ice, making them tough to take down. However, they are weak against Fire, Fighting, and Ground types, which can exploit their rigidity. Despite these vulnerabilities, Steel Pokémon are valued for their steadfast defense and endurance.",
+  },
+  {
+    icon: "water",
+    content:
+      "Water-type Pokémon are versatile and adaptive, capable of thriving in various environments, especially aquatic ones. They often have a diverse move pool, allowing them to learn a wide range of attacks, from powerful water-based moves to ice and even electric attacks. Water types are strong against Fire, Ground, and Rock types, using their aquatic abilities to drown out the competition. They tend to have balanced stats, making them reliable choices in battle. While they are weak to Electric and Grass types, Water Pokémon are known for their ability to flow through challenges, making them essential members of any team.",
+  },
+];
